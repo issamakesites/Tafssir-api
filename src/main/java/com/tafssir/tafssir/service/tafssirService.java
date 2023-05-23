@@ -29,16 +29,4 @@ public class tafssirService {
 		entity.setTableName(tableName);
 		return tafssirRepo.save(entity);
 	}
-
-	/*public Optional<tafssir> updateEntity(Long id, tafssir entity, String tableName) {
-		return tafssirRepo.findByIdAndTableName(id, tableName)
-				.map(oldEntity -> {
-					oldEntity.setTexte(entity.getTexte());
-					return tafssirRepo.save(oldEntity);
-				});
-	}*/
-
-	/*public void deleteEntity(Long id, String tableName) {
-		tafssirRepo.deleteByIdAndTableName(id, tableName);
-	}*/
 }
